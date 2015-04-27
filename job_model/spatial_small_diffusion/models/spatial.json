@@ -1,0 +1,54 @@
+{
+    "isSpatial": true, 
+    "meshFile": "spatial_small_diffusion/models/data/spatial.mesh.xml", 
+    "model": "spatial_small_diffusion/models/data/spatial.xml", 
+    "name": "spatial", 
+    "spatial": {
+        "initial_conditions": [
+            {
+                "count": 100, 
+                "species": "s1", 
+                "subdomain": 2, 
+                "type": "scatter", 
+                "x": 0, 
+                "y": 0, 
+                "z": 0
+            }, 
+            {
+                "count": 200, 
+                "species": "s2", 
+                "subdomain": 3, 
+                "type": "scatter", 
+                "x": 0, 
+                "y": 0, 
+                "z": 0
+            }
+        ], 
+        "mesh_wrapper_id": 6051711999279104, 
+        "reactions_subdomain_assignments": {
+            "R1": [
+                1
+            ]
+        }, 
+        "species_diffusion_coefficients": {
+            "s1": 1, 
+            "s2": 0.5
+        }, 
+        "species_subdomain_assignments": {
+            "s1": [
+                1, 
+                2, 
+                3
+            ], 
+            "s2": [
+                1, 
+                2, 
+                3
+            ]
+        }
+    }, 
+    "subdomainsFile": "spatial_small_diffusion/models/data/spatial.subdomains.txt", 
+    "units": "population", 
+    "user_id": "gmy.melissa@gmail.com", 
+    "version": "1.4.0"
+}
